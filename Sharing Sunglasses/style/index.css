@@ -5,13 +5,13 @@ a
     justify-content: center;
     display: flex;
     text-decoration: none;
-    color: rgb(207, 163, 197);
+    color: rgb(255, 255, 255);
 }
 
 p
 {
     text-align: center;
-    color: rgb(207, 163, 197);
+    color: rgb(255, 255, 255);
 }
 
 .nav
@@ -54,7 +54,7 @@ p
     justify-content: center;
     width: 300px;
     height: 375px;
-    background-color: rgb(243, 224, 197);
+    background-color: rgb(241, 232, 220);
     border-radius: 20px;
 }
 
@@ -96,4 +96,12 @@ p
     background-image: url("/image/bs_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.container 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
