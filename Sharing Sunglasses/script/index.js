@@ -8,33 +8,12 @@ function fetchJSON(url)
         {
             console.error('Error:', error);
         });
-}  
-
-function postJson(url, data) 
-{
-    return fetch(url, 
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(data)
-    })
-    .then(response => response.json())
-    .then(json => 
-    {
-      return json;
-    })
-    .catch(error => 
-    {
-      console.error(error);
-      throw error;
-    });
-  }
+}
 
 function SignInDiv()
 {
     var DivSign = document.getElementById("NavLiA_sign");
+    var ddm = document.getElementById("DropDownMenu");
     fetchJSON("/database/userlog/IsSignIn.php")
     .then(function(RequestJson) 
     {
@@ -44,6 +23,7 @@ function SignInDiv()
         UserName = RequestJson.name;
         DivSign.href = "/service/user.html";
         DivSign.innerHTML = "<p>" + UserName + "</p>";
+        ddm.classList.replace("notshow","dropdown-content")
       } 
       else 
       {

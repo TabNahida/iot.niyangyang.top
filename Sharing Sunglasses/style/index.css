@@ -16,12 +16,14 @@ p
 
 .nav
 {
-    width: 100%; 
+    width: 99%; 
     height: 50px; 
     background-color: rgb(171, 229, 233); 
     border-radius: 10px;
     display: flex;
     flex-direction: row;
+    padding: 5px;
+    box-shadow: 10 10 5px #888888;
 }
 
 .navli
@@ -56,6 +58,7 @@ p
     height: 375px;
     background-color: rgb(241, 232, 220);
     border-radius: 20px;
+    padding: 25px;
 }
 
 .showregion
@@ -104,4 +107,42 @@ p
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    top: 7.5%;
+    right: 1%;
+    background-color: #a2c5ed;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 5px;
+    border-radius: 10px;
+}
+  
+.dropdown-content a 
+{
+    color: rgb(229, 251, 242);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+  
+.dropdown-content a:hover 
+{
+    background-color: #e8dbaf;
+}
+  
+.navli:hover .dropdown-content
+{
+    display: block;
+}
+
+.notshow
+{
+    display: none;
 }

@@ -2,7 +2,7 @@
 session_start();
 $jsonData = file_get_contents("php://input");
 $data = json_decode($jsonData, true);
-$pwfile = $data["name"] + "/password.dat";
+$pwfile = $data["name"]."/password.dat";
 $result = array();
 if (file_exists($pwfile))
 {
@@ -23,4 +23,5 @@ else
     $result["sign_in"] = false;
         $result["error"] = "Error name";
 }
+echo json_encode($result);
 ?>
