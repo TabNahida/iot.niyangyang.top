@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="/style/index.css">
     <link rel="stylesheet" type="text/css" href="/style/SignRent.css">
     <script src="/script/index.js"></script>
+    <script src="/script/rent.js"></script>
     <title>Adjustable Sharing Sunglasses</title>
 </head>
 <body class="bodybgimg">
@@ -29,9 +30,9 @@
         <div class="container">
             <div class="login">
                 <h1>租借眼镜</h1>
-                <input type="text" placeholder="用户名">
-                <input type="password" placeholder="密码">
-                <button>开启箱子</button>
+                <input id="userpassword" type="password" placeholder="密码">
+                <button type="button" onclick="Renting()">开启箱子</button>
+                <h2 id="opencode" class="whitetext"></h2>
             </div>
         </div>
     </main>
