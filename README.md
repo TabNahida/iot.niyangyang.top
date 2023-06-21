@@ -1,6 +1,6 @@
 # iot.niyangyang.top
 
-![ASSG LOGO](https://github.com/TabNahida/iot.niyangyang.top/blob/main/Sharing%20Sunglasses/image/Logo.png)
+![ASSG LOGO](https://github.com/TabNahida/iot.niyangyang.top/blob/main/Sharing%20Sunglasses/image/Logo.svg)
 
 A website for physics IoT project [ASSG](http://iot.niyayang.top/index.html)
 
