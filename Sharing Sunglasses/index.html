@@ -7,26 +7,32 @@
 </head>
 <body class="bodybgimg">
     <header>
-        <div class="nav">
-            <div class="navli">
-                <a href="https://github.com/TabNahida/iot.niyangyang.top"><p>About</p></a>
+        <div class="nav grossglass">
+            <div class="navli grossglass">
+                <a id="navlimain" href="/index.html"><p>Main</p></a>
             </div>
-            <div class="navli right">
-                <a id="NavLiA_sign" href=""></a>
-                <div id="DropDownMenu" class="notshow">
+            <div class="signnav right">
+                <div class="navli right grossglass">
+                    <a id="NavLiA_sign" style="position: relative;" href=""></a>          
+                </div>
+                <div id="DropDownMenu grossglass" class="notshow">
                     <a href="">Porfile</a>
                     <a href="">Benefits</a>
                     <a href="/database/userlog/SignOut.php">Sign Out</a>
-                </div>                
+                </div>
             </div>
         </div>
     </header>
     <main>
         <script>
+            
             SignInDiv();
+            var navlimain = document.getElementById("navlimain");
+            navlimain.href = "https://github.com/TabNahida/iot.niyangyang.top";
+            navlimain.innerHTML = "<p>About</p>";
         </script>
         <div class="imageregion">
-            <img src="image/Logo.png" style="height: 100%;">
+            <img src="image/Logo.svg" style="height: 100%;">
         </div>
         <div class="showregion">
             <div class="showblock">

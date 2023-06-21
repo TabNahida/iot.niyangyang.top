@@ -23,16 +23,12 @@ function SignInDiv()
         UserName = RequestJson.name;
         DivSign.href = "/service/user.html";
         DivSign.innerHTML = "<p>" + UserName + "</p>";
-        ddm.classList.replace("notshow","dropdown-content")
+        ddm.classList.replace("notshow","dropdown-content");
       } 
       else 
       {
         DivSign.href = "/service/sign.html";
         DivSign.innerHTML = "<p>Sign In</p>";
       }
-    })
-    .catch(function(error) 
-    {
-      console.error('Error:', error);
     });
 }

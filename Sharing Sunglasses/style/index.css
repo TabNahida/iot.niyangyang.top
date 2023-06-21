@@ -17,13 +17,15 @@ p
 .nav
 {
     width: 99%; 
-    height: 50px; 
-    background-color: rgb(171, 229, 233); 
+    height: 6.5vh; 
+    background-color: rgba(171, 229, 233,0.5); 
     border-radius: 10px;
     display: flex;
     flex-direction: row;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     padding: 5px;
-    box-shadow: 10 10 5px #888888;
+    backdrop-filter: blur(10px);
+    position: relative;
 }
 
 .navli
@@ -35,11 +37,13 @@ p
     height: 100%; 
     border-radius: 10px;
     font-size: 25px;
+    background-color: rgba(171, 229, 233,0.1);
+    position: relative;
 }
 
 .navli:hover
 {
-    background-color: lightcyan;
+    background-color: rgba(205, 236, 236,0.5);
 }
 
 .right 
@@ -109,14 +113,22 @@ p
     height: 100vh;
 }
 
-.dropdown-content 
+.center
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-content
 {
     display: none;
-    position: absolute;
-    top: 7.5%;
-    right: 1%;
-    background-color: #a2c5ed;
-    min-width: 160px;
+    position: relative;
+    font-size: 25px;
+    top: 0vh;
+    right: 0vw;
+    background-color: rgba(171, 211, 244, 0.9);
+    width: 10vw;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
     padding: 5px;
@@ -125,7 +137,7 @@ p
   
 .dropdown-content a 
 {
-    color: rgb(229, 251, 242);
+    color: rgba(229, 251, 242, 1);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -134,10 +146,10 @@ p
   
 .dropdown-content a:hover 
 {
-    background-color: #e8dbaf;
+    background-color: rgba(247, 219, 167, 1);
 }
-  
-.navli:hover .dropdown-content
+
+.signnav:hover .dropdown-content
 {
     display: block;
 }
@@ -151,4 +163,14 @@ p
 {
     text-align: center;
     color: rgb(255, 255, 255);
+}
+
+.shadow
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.grossglass
+{
+    backdrop-filter: blur(10px);
 }
